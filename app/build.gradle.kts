@@ -70,6 +70,7 @@ dependencies {
     // Room compiler
     kapt( "androidx.room:room-compiler:2.7.2")
 
+
     // Room Kotlin Extensions
     implementation ("androidx.room:room-ktx:2.7.2")
 
