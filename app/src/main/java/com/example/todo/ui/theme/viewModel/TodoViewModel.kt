@@ -29,7 +29,7 @@ class TodoViewModel(private val repository: TodoRepository) : ViewModel() {
         }
     }
 
-    fun updateTodo(todo: Todo) {   // ✅ यही चाहिए!
+    fun updateTodo(todo: Todo) {
         viewModelScope.launch {
             repository.update(todo)
         }

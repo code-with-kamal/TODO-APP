@@ -32,7 +32,7 @@ class MainActivity : ComponentActivity() {
         val repository = TodoRepository(dao)
         val factory = TodoViewModelFactory(repository)
 
-        viewModel = ViewModelProvider(this, factory).get(TodoViewModel::class.java)
+        viewModel = ViewModelProvider(this, factory)[TodoViewModel::class.java]
 
         setContent {
             TodoListScreen(viewModel)
